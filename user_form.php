@@ -5,7 +5,7 @@ include "inc/cabecalho.php"
 <header class = "container">
     <div>
     <h1 class = "text-secondary pt-5">
-       <span class = "text-danger">MS</span>todolist
+       <span class = "text-danger">Login</span>
     </h1>
     </div>
 </header>
@@ -41,17 +41,21 @@ include "inc/cabecalho.php"
     <div class="row justify-content-center pt-5">
         <div class = "col-7 bg-white p-5 rounded">
 
-            <form method = "POST" action = "salvar_tarefa.php">
+            <form action="salvar_user.php" method="POST">
                 <div class="form-group">
-                    <label for="formGroupExampleInput">Nome da Tarefa:</label>
-                    <input type="text" class="form-control" id = "novatarefa" name = "novatarefa" placeholder="Nova Tarefa">
+                    <label for="exampleInputEmail1">Endereço de email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="Seu email">
+                    <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
                 </div>
                 <div class="form-group">
-                    <label for="formGroupExampleInput2">Descrição:</label>
-                    <input type="text" id = "descricao" name = "descricao" class="form-control" id="formGroupExampleInput2" placeholder=" escreva descrição">
+                    <label for="exampleInputPassword1">Senha</label>
+                    <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Senha">
                 </div>
-                <button type="subimit" class="btn btn-outline-secondary">Nova Tarefa</button>
-                <span class = "text-secondary pl-5">status:</span>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Clique em mim</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
 
         </div>

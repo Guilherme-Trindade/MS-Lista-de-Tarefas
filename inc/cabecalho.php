@@ -1,8 +1,6 @@
 <?php
   ini_set('display_errors', 1);
   error_reporting(E_ALL);
-
-  $con = new PDO("mysql:host=localhost;dbname=Mstarefas", "root", "mscode@2022");
   ?>
 
 <!DOCTYPE html>

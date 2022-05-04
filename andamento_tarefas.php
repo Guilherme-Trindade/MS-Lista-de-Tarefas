@@ -1,5 +1,6 @@
 <?php
     include "inc/cabecalho.php";
+    require_once("inc/Banco.php");
 ?>
 
 <?php
@@ -8,12 +9,12 @@
     $emAndamento = "Em andamento";
     $dataTarefa = date("Y-m-d H:i:s");
     
-    $stmt = $con->prepare("UPDATE tarefa SET situacao = ?, criado_em = ? WHERE id = ?");
-    $stmt->bindParam(1, $emAndamento);
-    $stmt->bindParam(2, $dataTarefa);
-    $stmt->bindParam(3, $id_tarefa);
+    $stm = Banco::getInstance()->prepare("UPDATE tarefa SET situacao = ?, criado_em = ? WHERE id = ?");
+    $stm->bindParam(1, $emAndamento);
+    $stm->bindParam(2, $dataTarefa);
+    $stm->bindParam(3, $id_tarefa);
 
-    $stmt->execute();
+    $stm->execute();
 
     header('Location: tarefas_lista.php');
 
