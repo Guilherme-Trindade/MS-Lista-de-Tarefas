@@ -1,6 +1,6 @@
 <?php
-    include "inc/cabecalho.php";
-    require_once("inc/Banco.php");
+    include "../inc/cabecalho.php";
+    require_once("../Models/Banco.php");
 ?>
 
 <?php
@@ -11,7 +11,7 @@
     $stm->bindParam(1, $id_tarefa);
     $stm->execute();
 
-    header('Location: tarefas_lista.php');
+    header('Location: ../viws/tarefas_lista.php');
 ?>
 
 

@@ -1,6 +1,6 @@
 <?php
-    include "inc/cabecalho.php";
-    require_once("inc/Banco.php");
+    include "../inc/cabecalho.php";
+    require_once("../inc/Banco.php");
 ?>
 
 <header class = "container">
@@ -68,5 +68,5 @@
 
 
 <?php
-    include "inc/rodape.php";
+    include "../inc/rodape.php";
 ?>

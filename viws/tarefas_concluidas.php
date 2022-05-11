@@ -1,7 +1,7 @@
 <?php
 
-include "inc/cabecalho.php";
-require_once("inc/Banco.php");
+include "../inc/cabecalho.php";
+require_once("../Models/Banco.php");
 
 ?>
 
@@ -78,5 +78,5 @@ require_once("inc/Banco.php");
 <?php } ?>
 
 <?php
-include "inc/rodape.php"
+include "../inc/rodape.php"
 ?>

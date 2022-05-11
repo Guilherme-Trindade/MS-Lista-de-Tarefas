@@ -1,6 +1,6 @@
 <?php
 require_once("Tarefa.php");
-require_once("inc/Banco.php");
+require_once("Banco.php");
 
 class TarefaDAO {
     private static $instance;
