@@ -41,7 +41,7 @@ include "../inc/cabecalho.php"
     <div class="row justify-content-center pt-5">
         <div class = "col-7 bg-white p-5 rounded">
 
-            <form method = "POST" action = "salvar_tarefa.php">
+            <form method = "POST" action = "../controllers/salvar_tarefa.php">
                 <div class="form-group">
                     <label for="formGroupExampleInput">Nome da Tarefa:</label>
                     <input type="text" class="form-control" id = "novatarefa" name = "novatarefa" placeholder="Nova Tarefa">

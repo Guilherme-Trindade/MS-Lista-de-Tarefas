@@ -57,7 +57,7 @@ require_once("../Models/Banco.php");
                 <div class="form-group">
                     
                     <span class = "text-black-50 pb-2">#<?php echo $obj->id; ?></span> 
-                    <a class="justify-content-end text-danger" href="excluir_tarefas.php?id=<?php echo $obj->id; ?>">Excluir</a><br>
+                    <a class="justify-content-end text-danger" href="../controllers/excluir_tarefas.php?id=<?php echo $obj->id; ?>">Excluir</a><br>
                     <label for="formGroupExampleInput">Nome da Tarefa:</label>
                     <h6><?php echo $obj->nome; ?></h6>
                 </div>

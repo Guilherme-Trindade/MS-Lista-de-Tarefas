@@ -53,7 +53,7 @@ require_once("../Models/Banco.php");
                 <div class="form-group">
                             
                     <span class = "text-black-50 pb-2">#<?php echo $obj->id; ?></span> 
-                    <a class="justify-content-end text-danger" href="excluir_tarefas.php?id=<?php echo $obj->id; ?>">Excluir</a><br>
+                    <a class="justify-content-end text-danger" href="../controllers/excluir_tarefas.php?id=<?php echo $obj->id; ?>">Excluir</a><br>
                     <label for="formGroupExampleInput">Nome da Tarefa:</label>
                         <h6><?php echo $obj->nome; ?></h6>
                      </div>
@@ -65,10 +65,10 @@ require_once("../Models/Banco.php");
                     <span class = "text-black-50 pl-5 text-right">Data: <?php echo date_format(date_create($obj->criado_em), "d/m/Y H:i:s"); ?></span>
                         
                     <?php if($obj->situacao == "Pendente") { ?>
-                        <a class="pl-3" href="controllers/andamento_tarefas.php?id=<?php echo $obj->id; ?>"><button type="button" class="btn btn-outline-danger p-2 ml-5 rounded-bottom shadow-sm ">Assumir</button></a><br>
+                        <a class="pl-3" href="../controllers/andamento_tarefas.php?id=<?php echo $obj->id; ?>"><button type="button" class="btn btn-outline-danger p-2 ml-5 rounded-bottom shadow-sm ">Assumir</button></a><br>
                     <?php } ?>
                     <?php if($obj->situacao == "Em andamento") { ?>
-                        <a class="pl-3" href="concluir_tarefas.php?id=<?php echo $obj->id; ?>"> <button type="button" class="btn btn-outline-success p-2 ml-5 rounded-bottom shadow-sm ">Concluir</button> </a>
+                        <a class="pl-3" href="../controllers/concluir_tarefas.php?id=<?php echo $obj->id; ?>"> <button type="button" class="btn btn-outline-success p-2 ml-5 rounded-bottom shadow-sm ">Concluir</button> </a>
                     <?php } ?>
 
                 </div>

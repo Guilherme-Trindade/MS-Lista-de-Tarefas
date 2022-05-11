@@ -41,7 +41,7 @@ include "../inc/cabecalho.php"
     <div class="row justify-content-center pt-5">
         <div class = "col-7 bg-white p-5 rounded">
 
-            <form action="salvar_user.php" method="POST">
+            <form action="../controllers/salvar_user.php" method="POST">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Endereço de email</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="Seu email">
