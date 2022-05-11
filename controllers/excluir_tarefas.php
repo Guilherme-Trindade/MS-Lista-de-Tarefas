@@ -11,6 +11,7 @@
     $stm->bindParam(1, $id_tarefa);
     $stm->execute();
 
+    header('Location: ../viws/tarefas_lista.php');
 ?>
 
 
